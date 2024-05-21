@@ -640,7 +640,7 @@ var config = {
             hidden: false,
             title: 'Corelation between Temperature and Vegetation',
             description: 'The historical data shows that there is a strong correlation between climate and vegetation cover in the NBNM region. We will analyze the data to identify the relationship between temperature, precipitation, VWC, and Dry Stress on vegetation cover in this region.',
-            image: './images/correlation_temperature.png',
+            image: './images/vegetation_temperature_corr.png',
             location: {
                 center: [-109.973,37.608],
                 zoom: 12,
@@ -677,7 +677,7 @@ var config = {
             hidden: false,
             title: 'Corelation between Percipitation and Vegetation',
             description: 'The historical data shows that there is a strong correlation between climate and vegetation cover in the NBNM region. We will analyze the data to identify the relationship between temperature, precipitation, VWC, and Dry Stress on vegetation cover in this region.',
-            image: './images/correlation_ppt.png',
+            image: './images/vegetation_precipitation_corr.png',
             location: {
                 center: [-109.973,37.608],
                 zoom: 12,
@@ -714,7 +714,7 @@ var config = {
             hidden: false,
             title: 'Corelation between Soil and Vegetation',
             description: 'The historical data shows that there is a strong correlation between climate and vegetation cover in the NBNM region. We will analyze the data to identify the relationship between temperature, precipitation, VWC, and Dry Stress on vegetation cover in this region.',
-            image: './images/correlation_soil.png',
+            image: './images/vegetation_vwc_corr.png',
             location: {
                 center: [-109.973,37.608],
                 zoom: 12,
@@ -751,7 +751,7 @@ var config = {
             hidden: false,
             title: 'Corelation between Soil and Vegetation',
             description: 'The historical data shows that there is a strong correlation between climate and vegetation cover in the NBNM region. We will analyze the data to identify the relationship between temperature, precipitation, VWC, and Dry Stress on vegetation cover in this region.',
-            image: './images/correlation_vwc.png',
+            image: './images/vegetation_soil_corr.png',
             location: {
                 center: [-109.973,37.608],
                 zoom: 12,
