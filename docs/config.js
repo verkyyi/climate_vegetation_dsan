@@ -98,6 +98,7 @@ var config = {
             hidden: false,
             title: 'Barren Land Coverage',
             description: 'The vegetation cover in the NBNM region is diverse and includes various types of vegetation, such as shrubs, grasses, and trees. We will analyze the data to identify the dominant vegetation types and their distribution in this region.',
+            image: './images/bare_hist.png',
             location: {
                 center: [-110.003,37.582],
                 zoom: 13,
@@ -130,10 +131,11 @@ var config = {
         },
         {
             id: 'summary-vegetation-herb',
-            alignment: 'left',
+            alignment: 'right',
             hidden: false,
             title: 'Herb Coverage',
             description: 'The vegetation cover in the NBNM region is diverse and includes various types of vegetation, such as shrubs, grasses, and trees. We will analyze the data to identify the dominant vegetation types and their distribution in this region.',
+            image:'./images/herb_hist.png',
             location: {
                 center: [-109.976,37.632],
                 zoom: 13,
@@ -170,8 +172,9 @@ var config = {
             hidden: false,
             title: 'Litter Coverage',
             description: 'The vegetation cover in the NBNM region is diverse and includes various types of vegetation, such as shrubs, grasses, and trees. We will analyze the data to identify the dominant vegetation types and their distribution in this region.',
+            image: './images/litter_hist.png',
             location: {
-                center: [-109.969,37.635],
+                center: [-110.003,37.582],
                 zoom: 13,
                 pitch: 60,
                 bearing: -43.2,                
@@ -206,6 +209,7 @@ var config = {
             hidden: false,
             title: 'Shrub Coverage',
             description: 'The vegetation cover in the NBNM region is diverse and includes various types of vegetation, such as shrubs, grasses, and trees. We will analyze the data to identify the dominant vegetation types and their distribution in this region.',
+            image: './images/shrub_hist.png',
             location: {
                 center: [-110.033,37.599],
                 zoom: 13,
@@ -238,10 +242,11 @@ var config = {
         }, 
         {
             id: 'summary-vegetation-treecanopy',
-            alignment: 'left',
+            alignment: 'right',
             hidden: false,
             title: 'Tree Canopy Coverage',
             description: 'The vegetation cover in the NBNM region is diverse and includes various types of vegetation, such as shrubs, grasses, and trees. We will analyze the data to identify the dominant vegetation types and their distribution in this region.',
+            image: './images/treecanopy_hist.png',
             location: {
                 center: [-109.973,37.630],
                 zoom: 13,
@@ -335,10 +340,11 @@ var config = {
         }, 
         {
             id: 'location-hottest',
-            alignment: 'right',
+            alignment: 'left',
             hidden: false,
-            title: 'Hottest Summer: 24.55 Celsius',
+            title: 'Highest Summer Avg Temperature: 22.92 °C',
             description: 'The hottest locations in the NBNM region are marked in red on the map. These locations have the highest average temperature over the period from 1980 to 2020. We will analyze the data from these locations to understand the impact of temperature on vegetation cover in this region.',
+            image:"./images/summer_temp_hist.png",
             location: {
                 center: [-110.044,37.602],
                 zoom: 13.29,
@@ -371,17 +377,18 @@ var config = {
         },
         {
             id: 'location-highest-precipitation',
-            alignment: 'left',
+            alignment: 'right',
             hidden: false,
-            title: 'Highest Precipitation: 0.0001 mm',
+            title: 'Highest Precipitation: 8.75 mm',
             description: 'The Highest Precipitation locations in the NBNM region are marked in blue on the map. These locations have the highest average precipitation over the period from 1980 to 2020. We will analyze the data from these locations to understand the impact of precipitation on vegetation cover in this region.',
+            image: "./images/summer_precip_hist.png",
             location: {
                 center: [-109.977,37.632],
                 zoom: 13.29,
                 pitch: 60,
                 bearing: 30,                
             },
-            mapAnimation: 'flyTo',
+            mapAnimation: 'easeTo',
             rotateAnimation: true,
             callback: '',
             onChapterEnter: [
@@ -407,10 +414,11 @@ var config = {
         },
         {
             id: 'location-vwc',
-            alignment: 'left',
+            alignment: 'right',
             hidden: false,
             title: 'VWC: 0.0001',
             description: 'The Highest Precipitation locations in the NBNM region are marked in blue on the map. These locations have the highest average precipitation over the period from 1980 to 2020. We will analyze the data from these locations to understand the impact of precipitation on vegetation cover in this region.',
+            image: './images/vwc_hist.png',
             location: {
                 center: [-109.969,37.621],
                 zoom: 13.29,
@@ -447,6 +455,7 @@ var config = {
             hidden: false,
             title: 'Dry Stress: 0.0001',
             description: 'The Highest Precipitation locations in the NBNM region are marked in blue on the map. These locations have the highest average precipitation over the period from 1980 to 2020. We will analyze the data from these locations to understand the impact of precipitation on vegetation cover in this region.',
+            image: './images/dry_stress_hist.png',
             location: {
                 center: [-110.042,37.602],
                 zoom: 13.29,
@@ -478,32 +487,15 @@ var config = {
             ]
         },  
         {
-            id: 'summary-daterange',
-            alignment: 'right',
-            hidden: false,
-            title: '1980-2020',
-            description: 'The historical data covers the period from 1980 to 2020. We will analyze the data to identify trends and patterns in climate and vegetation cover over this period.',
-            location: {
-                center: [-109.973,37.608],
-                zoom: 13,
-                pitch: 45,
-                bearing: 0,
-            },
-            mapAnimation: 'flyTo',
-            rotateAnimation: false,
-            callback: '',
-            onChapterEnter: [],
-            onChapterExit: []
-        },
-        {
             id: 'comparison-temperature',
             alignment: 'right',
             hidden: false,
-            title: 'Summer Temperature between 1980-2020',
+            title: 'Summer Temperature Difference between 1980-2020',
             description: 'The historical data shows that the average summer temperature in the NBNM region has been increasing over the period from 1980 to 2020. We will analyze the data to understand the impact of temperature on vegetation cover in this region.',
+            image: './images/temp_diff_hist.png',
             location: {
                 center: [-109.973,37.608],
-                zoom: 12,
+                zoom: 13.5,
                 pitch: 60,
                 bearing: 0,
             },
@@ -537,9 +529,10 @@ var config = {
             hidden: false,
             title: 'Summer Precipitation between 1980-2020',
             description: 'The historical data shows that the average summer precipitation in the NBNM region has been increasing over the period from 1980 to 2020. We will analyze the data to understand the impact of precipitation on vegetation cover in this region.',
+            image: './images/precip_diff_hist.png',
             location: {
                 center: [-109.973,37.608],
-                zoom: 12,
+                zoom: 13.5,
                 pitch: 60,
                 bearing: 0,
             },
@@ -573,9 +566,10 @@ var config = {
             hidden: false,
             title: 'VWC between 1980-2020',
             description: 'The historical data shows that the average summer VWC in the NBNM region has been increasing over the period from 1980 to 2020. We will analyze the data to understand the impact of VWC on vegetation cover in this region.',
+            image: "./images/vwc_diff_hist.png",
             location: {
                 center: [-109.973,37.608],
-                zoom: 12,
+                zoom: 13.5,
                 pitch: 60,
                 bearing: 0,
             },
@@ -609,9 +603,10 @@ var config = {
             hidden: false,
             title: 'Dry Stress between 1980-2020',
             description: 'The historical data shows that the average summer Dry Stress in the NBNM region has been increasing over the period from 1980 to 2020. We will analyze the data to understand the impact of Dry Stress on vegetation cover in this region.',
+            image: './images/dry_stress_diff_hist.png',
             location: {
                 center: [-109.973,37.608],
-                zoom: 12,
+                zoom: 13.5,
                 pitch: 60,
                 bearing: 0,
             },
@@ -641,7 +636,7 @@ var config = {
         },
         {
             id: 'insights-corelation-temperature',
-            alignment: 'left',
+            alignment: 'right',
             hidden: false,
             title: 'Corelation between Temperature and Vegetation',
             description: 'The historical data shows that there is a strong correlation between climate and vegetation cover in the NBNM region. We will analyze the data to identify the relationship between temperature, precipitation, VWC, and Dry Stress on vegetation cover in this region.',
@@ -657,7 +652,7 @@ var config = {
             callback: '',
             onChapterEnter: [
                 {
-                    layer: 'comparision-temp',
+                    layer: 'temperature',
                     opacity: 1,
                 },
                 {
@@ -667,7 +662,7 @@ var config = {
             ],
             onChapterExit: [
                 {
-                    layer: 'comparision-temp',
+                    layer: 'temperature',
                     opacity: 0,
                 },
                 {
@@ -694,7 +689,7 @@ var config = {
             callback: '',
             onChapterEnter: [
                 {
-                    layer: 'comparision-ppt',
+                    layer: 'precipitation',
                     opacity: 1,
                 },
                 {
@@ -704,7 +699,7 @@ var config = {
             ],
             onChapterExit: [
                 {
-                    layer: 'comparision-ppt',
+                    layer: 'precipitation',
                     opacity: 0,
                 },
                 {
@@ -715,7 +710,7 @@ var config = {
         },
         {
             id: 'insights-corelation-soil',
-            alignment: 'left',
+            alignment: 'right',
             hidden: false,
             title: 'Corelation between Soil and Vegetation',
             description: 'The historical data shows that there is a strong correlation between climate and vegetation cover in the NBNM region. We will analyze the data to identify the relationship between temperature, precipitation, VWC, and Dry Stress on vegetation cover in this region.',
@@ -731,7 +726,7 @@ var config = {
             callback: '',
             onChapterEnter: [
                 {
-                    layer: 'comparision-dry-stress',
+                    layer: 'dry_stress',
                     opacity: 1,
                 },
                 {
@@ -741,7 +736,7 @@ var config = {
             ],
             onChapterExit: [
                 {
-                    layer: 'comparision-dry-stress',
+                    layer: 'dry_stress',
                     opacity: 0,
                 },
                 {
@@ -768,7 +763,7 @@ var config = {
             callback: '',
             onChapterEnter: [
                 {
-                    layer: 'comparision-vwc',
+                    layer: 'vwc',
                     opacity: 1,
                 },
                 {
@@ -778,7 +773,7 @@ var config = {
             ],
             onChapterExit: [
                 {
-                    layer: 'comparision-vwc',
+                    layer: 'vwc',
                     opacity: 0,
                 },
                 {
