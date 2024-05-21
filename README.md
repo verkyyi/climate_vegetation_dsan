@@ -1,5 +1,7 @@
 # Climate Change and Vegetation Dynamics
 
+Author: Lianghui Yi
+
 ## Introduction
 
 In this project, we investigated the relationship between climate change and vegetation dynamics. 
