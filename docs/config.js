@@ -77,7 +77,7 @@ var config = {
                 bearing: -43.2,
             },
             mapAnimation: 'flyTo',
-            rotateAnimation: false,
+            rotateAnimation: true,
             callback: '',
             onChapterEnter: [
                 {
@@ -100,7 +100,7 @@ var config = {
             description: 'The vegetation cover in the NBNM region is diverse and includes various types of vegetation, such as shrubs, grasses, and trees. We will analyze the data to identify the dominant vegetation types and their distribution in this region.',
             location: {
                 center: [-110.003,37.582],
-                zoom: 15,
+                zoom: 13,
                 pitch: 60,
                 bearing: -43.2,                
             },
@@ -136,11 +136,11 @@ var config = {
             description: 'The vegetation cover in the NBNM region is diverse and includes various types of vegetation, such as shrubs, grasses, and trees. We will analyze the data to identify the dominant vegetation types and their distribution in this region.',
             location: {
                 center: [-109.976,37.632],
-                zoom: 15,
+                zoom: 13,
                 pitch: 60,
                 bearing: -43.2,                
             },
-            mapAnimation: 'flyTo',
+            mapAnimation: 'easeTo',
             rotateAnimation: true,
             callback: '',
             onChapterEnter: [
@@ -172,7 +172,7 @@ var config = {
             description: 'The vegetation cover in the NBNM region is diverse and includes various types of vegetation, such as shrubs, grasses, and trees. We will analyze the data to identify the dominant vegetation types and their distribution in this region.',
             location: {
                 center: [-109.969,37.635],
-                zoom: 15,
+                zoom: 13,
                 pitch: 60,
                 bearing: -43.2,                
             },
@@ -208,7 +208,7 @@ var config = {
             description: 'The vegetation cover in the NBNM region is diverse and includes various types of vegetation, such as shrubs, grasses, and trees. We will analyze the data to identify the dominant vegetation types and their distribution in this region.',
             location: {
                 center: [-110.033,37.599],
-                zoom: 15,
+                zoom: 13,
                 pitch: 60,
                 bearing: -43.2,                
             },
@@ -244,7 +244,7 @@ var config = {
             description: 'The vegetation cover in the NBNM region is diverse and includes various types of vegetation, such as shrubs, grasses, and trees. We will analyze the data to identify the dominant vegetation types and their distribution in this region.',
             location: {
                 center: [-109.973,37.630],
-                zoom: 15,
+                zoom: 13,
                 pitch: 60,
                 bearing: -43.2,                
             },
@@ -808,13 +808,13 @@ var config = {
             ]
         },
         {
-            id: 'final-chapter',
+            id: 'references',
             alignment: 'center',
             hidden: false,
             title: 'References',
             description: `
-            1. https://www.nps.gov/nabr/index.htm </br>
-            2. https://www.nps.gov/nabr/learn/nature/vegetation.htm</br>
+            1. <a href="https://jpj.georgetown.domains/2024-scholarship/drive.html">Datasets folder from Returning Scholarship</a> </br>
+            2. <a href="https://en.wikipedia.org/wiki/Natural_Bridges_National_Monument">Natural Bridges National Monument (NBNM) from Wikipedia</a></br>
             3. <a href="https://github.com/mapbox/storytelling">Storytelling Template</a></br>
             `,
             location: {
