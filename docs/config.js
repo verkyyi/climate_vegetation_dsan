@@ -6,14 +6,16 @@ var config = {
     //projection: 'equirectangular',
     //Read more about available projections here
     //https://docs.mapbox.com/mapbox-gl-js/example/projections/
-    inset: true,
+    inset: false, // Add an inset map in the lower left corner
     theme: 'dark',
     use3dTerrain: true, //set true for enabling 3D maps.
     auto: false,
     title: 'The Story between Climate Change and Vegetation Cover in NBNM',
     subtitle: 'A specific research in summer indicators.',
     byline: 'For DSAN Returning Scholarship 2024 by ly**7',
-    footer: 'Created using<a href = "https://github.com/mapbox/storytelling" target = "_blank">Mapbox Storytelling</a> template.',
+    footer: `
+    Source: Natural Bridges National Monument</br>
+    <a href="https://github.com/verkyyi/climate_vegetation_dsan">Access Code and Datasets on Github</a>`,
     chapters: [
         {
             id: 'intro',
@@ -791,6 +793,30 @@ var config = {
             hidden: false,
             title: 'Conclusion',
             description: 'Based on the analysis of historical data, we can see that there is a strong relationship between climate change and vegetation cover in the NBNM region. The data shows that as temperature and precipitation increase, vegetation cover also increases. This indicates that climate change has a significant impact on vegetation cover in this region. By analyzing the historical data and predicting future trends, we can better understand the impact of climate change on vegetation cover and take steps to mitigate its effects.',
+            location: {
+                center: [-110.0472, 37.60413],
+                zoom: 3,
+                pitch: 60,
+                bearing: -43.2,
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: true,
+            callback: '',
+            onChapterEnter: [
+            ],
+            onChapterExit: [
+            ]
+        },
+        {
+            id: 'final-chapter',
+            alignment: 'center',
+            hidden: false,
+            title: 'References',
+            description: `
+            1. https://www.nps.gov/nabr/index.htm </br>
+            2. https://www.nps.gov/nabr/learn/nature/vegetation.htm</br>
+            3. <a href="https://github.com/mapbox/storytelling">Storytelling Template</a></br>
+            `,
             location: {
                 center: [-110.0472, 37.60413],
                 zoom: 3,
