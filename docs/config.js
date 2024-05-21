@@ -23,7 +23,8 @@ var config = {
             hidden: false,
             title: 'Introduction',
             description: `
-            Wiin the past few decades, the global climate has been changing rapidly, and the vegetation cover has been affected by this change. In this story, we will explore the relationship between climate change and vegetation cover in the Natural Bridges National Monument (NBNM) region. We will use the historical data of the NBNM region to analyze the impact of climate change on vegetation cover and predict the future trend of vegetation cover in this region.
+            With the past few decades, the global climate has been changing rapidly,and the vegetation cover has been affected by this change. In this story,
+            we will explore the relationship between climate change and vegetation cover in the Natural Bridges National Monument (NBNM) region.
             `,
             location: {
                 center: [-110.0472, 37.60413],
@@ -46,7 +47,7 @@ var config = {
             title: 'Natural Bridges National Monument',
             image: './images/Owachomo_laban.jpg',
             description: `
-            Natural Bridges National Monument is a U.S.National Monument located about 50 miles(80 km) northwest of the Four Corners boundary of southeast Utah, in the western United States, at the junction of White Canyon and Armstrong Canyon, part of the Colorado River drainage.It features the thirteenth largest natural bridge in the world, [4] carved from the white Permian sandstone of the Cedar Mesa Formation that gives White Canyon its name.
+            Natural Bridges National Monument is a U.S.National Monument located about 50 miles(80 km) northwest of the Four Corners boundary of southeast Utah, in the western United States, at the junction of White Canyon and Armstrong Canyon, part of the Colorado River drainage.
             <br>
             Our journey starts from here, exploring the relationship between climate change and vegetation cover in this region.
             `,
@@ -68,7 +69,7 @@ var config = {
             id: 'summary-locations',
             alignment: 'left',
             hidden: false,
-            title: '113 Locations',
+            title: 'Data Sources: 113 Locations',
             description: 'Within this dataset, there are 113 locations in the NBNM region. Each location has historical data on climate and vegetation cover. We will analyze the data to understand the relationship between climate change and vegetation cover in this region.',
             location: {
                 center: [-110.0472, 37.60413],
@@ -96,8 +97,8 @@ var config = {
             id: 'summary-vegetation-bare',
             alignment: 'left',
             hidden: false,
-            title: 'Barren Land Coverage',
-            description: 'The vegetation cover in the NBNM region is diverse and includes various types of vegetation, such as shrubs, grasses, and trees. We will analyze the data to identify the dominant vegetation types and their distribution in this region.',
+            title: 'The Bare Percentage',
+            description: `First, we will start with the Bare Percentage. As you can see from the map and the density histogram, the Bare Percentage is the most common vegetation type in the NBNM region.`,
             image: './images/bare_hist.png',
             location: {
                 center: [-110.003,37.582],
@@ -134,7 +135,7 @@ var config = {
             alignment: 'right',
             hidden: false,
             title: 'Herb Coverage',
-            description: 'The vegetation cover in the NBNM region is diverse and includes various types of vegetation, such as shrubs, grasses, and trees. We will analyze the data to identify the dominant vegetation types and their distribution in this region.',
+            description: `Then we will analyze the Herb Coverage. The center point of the map is the location with the highest Herb Coverage in the NBNM region.`,
             image:'./images/herb_hist.png',
             location: {
                 center: [-109.976,37.632],
@@ -171,7 +172,8 @@ var config = {
             alignment: 'left',
             hidden: false,
             title: 'Litter Coverage',
-            description: 'The vegetation cover in the NBNM region is diverse and includes various types of vegetation, such as shrubs, grasses, and trees. We will analyze the data to identify the dominant vegetation types and their distribution in this region.',
+            description: `
+            Next, we will analyze the Litter Coverage. Litter is the dead plant material that accumulates on the ground. There is a strong correlation between litter coverage and other vegetation cover types in the NBNM region.`,
             image: './images/litter_hist.png',
             location: {
                 center: [-110.003,37.582],
@@ -208,7 +210,8 @@ var config = {
             alignment: 'left',
             hidden: false,
             title: 'Shrub Coverage',
-            description: 'The vegetation cover in the NBNM region is diverse and includes various types of vegetation, such as shrubs, grasses, and trees. We will analyze the data to identify the dominant vegetation types and their distribution in this region.',
+            description: `
+            Shrubs are small to medium-sized woody plants that are an important part of the vegetation in the NBNM region.`,
             image: './images/shrub_hist.png',
             location: {
                 center: [-110.033,37.599],
@@ -245,7 +248,8 @@ var config = {
             alignment: 'right',
             hidden: false,
             title: 'Tree Canopy Coverage',
-            description: 'The vegetation cover in the NBNM region is diverse and includes various types of vegetation, such as shrubs, grasses, and trees. We will analyze the data to identify the dominant vegetation types and their distribution in this region.',
+            description: `
+            Tree Canopy is the top layer of vegetation in a forest or woodland. It provides shade and habitat for many species of plants and animals in the NBNM region. The center point of the map is the location with the highest Tree Canopy Coverage in the NBNM region.`,
             image: './images/treecanopy_hist.png',
             location: {
                 center: [-109.973,37.630],
@@ -281,8 +285,8 @@ var config = {
             id: 'summary-vegetation',
             alignment: 'left',
             hidden: false,
-            title: 'Summary of Vegetation Cover',
-            description: 'Here we show all the vegetation cover types in the NBNM region. We will analyze the data to identify the dominant vegetation types and their distribution in this region.',
+            title: 'Vegetation Cover stability: 1980-2020',
+            description: 'As you can see from the plot, the vegetation for each location is stable over the period from 1980 to 2020, which is strange. Still, We will try to analyze the data to understand the impact of climate change based on different vegetation cover in this region.',
             image: './images/vegetation_stablility.png',
             location: {
                 center: [-110.0472, 37.60413],
@@ -343,7 +347,8 @@ var config = {
             alignment: 'left',
             hidden: false,
             title: 'Highest Summer Avg Temperature: 22.92 °C',
-            description: 'The hottest locations in the NBNM region are marked in red on the map. These locations have the highest average temperature over the period from 1980 to 2020. We will analyze the data from these locations to understand the impact of temperature on vegetation cover in this region.',
+            description: `
+            As you can see from the map, the average summer temperature in the NBNM region ranges from 20.00 °C to 22.92 °C.`,
             image:"./images/summer_temp_hist.png",
             location: {
                 center: [-110.044,37.602],
@@ -379,8 +384,9 @@ var config = {
             id: 'location-highest-precipitation',
             alignment: 'right',
             hidden: false,
-            title: 'Highest Precipitation: 8.75 mm',
-            description: 'The Highest Precipitation locations in the NBNM region are marked in blue on the map. These locations have the highest average precipitation over the period from 1980 to 2020. We will analyze the data from these locations to understand the impact of precipitation on vegetation cover in this region.',
+            title: 'Highest Summer Precipitation: 8.75 mm',
+            description: `
+            Similarly, the average summer precipitation is also stable in the NBNM region, ranging from 7.00 mm to 8.75 mm.`,
             image: "./images/summer_precip_hist.png",
             location: {
                 center: [-109.977,37.632],
@@ -416,8 +422,9 @@ var config = {
             id: 'location-vwc',
             alignment: 'right',
             hidden: false,
-            title: 'VWC: 0.0001',
-            description: 'The Highest Precipitation locations in the NBNM region are marked in blue on the map. These locations have the highest average precipitation over the period from 1980 to 2020. We will analyze the data from these locations to understand the impact of precipitation on vegetation cover in this region.',
+            title: 'Highest Summer Volume Water Content: 0.11',
+            description: `
+            This attribute (column name) in the data table represents the volumetric water content in the whole soil profile during summer.`,
             image: './images/vwc_hist.png',
             location: {
                 center: [-109.969,37.621],
@@ -453,8 +460,10 @@ var config = {
             id: 'location-dry-stress',
             alignment: 'left',
             hidden: false,
-            title: 'Dry Stress: 0.0001',
-            description: 'The Highest Precipitation locations in the NBNM region are marked in blue on the map. These locations have the highest average precipitation over the period from 1980 to 2020. We will analyze the data from these locations to understand the impact of precipitation on vegetation cover in this region.',
+            title: 'Highest Extreme Short Term Dry Stress: 35.16',
+            description: `
+            This attribute in the data table represents the extreme short term dry stress for the entire soil profile in the summer.
+            It is an indicator of the soil's ability to retain moisture during dry periods.`,
             image: './images/dry_stress_hist.png',
             location: {
                 center: [-110.042,37.602],
@@ -491,7 +500,7 @@ var config = {
             alignment: 'right',
             hidden: false,
             title: 'Summer Temperature Difference between 1980-2020',
-            description: 'The historical data shows that the average summer temperature in the NBNM region has been increasing over the period from 1980 to 2020. We will analyze the data to understand the impact of temperature on vegetation cover in this region.',
+            description: 'The historical data shows that the average summer temperature in the NBNM region has been increasing over the period from 1980 to 2020. The number showing on each location is the temperature difference between 1980 and 2020.',
             image: './images/temp_diff_hist.png',
             location: {
                 center: [-109.973,37.608],
@@ -528,7 +537,7 @@ var config = {
             alignment: 'right',
             hidden: false,
             title: 'Summer Precipitation between 1980-2020',
-            description: 'The historical data shows that the average summer precipitation in the NBNM region has been increasing over the period from 1980 to 2020. We will analyze the data to understand the impact of precipitation on vegetation cover in this region.',
+            description: 'Similarly, the precipitation in the NBNM region has been increasing over the period from 1980 to 2020. The number showing on each location is the precipitation difference between 1980 and 2020.',
             image: './images/precip_diff_hist.png',
             location: {
                 center: [-109.973,37.608],
@@ -564,8 +573,8 @@ var config = {
             id: 'comparison-vwc',
             alignment: 'right',
             hidden: false,
-            title: 'VWC between 1980-2020',
-            description: 'The historical data shows that the average summer VWC in the NBNM region has been increasing over the period from 1980 to 2020. We will analyze the data to understand the impact of VWC on vegetation cover in this region.',
+            title: 'Summer Volume Water Content between 1980-2020',
+            description: `Most of the locations have a zero difference.(Numbers are omitted for these locations). Other locations have slightly decreased in VWC over the period from 1980 to 2020.`,
             image: "./images/vwc_diff_hist.png",
             location: {
                 center: [-109.973,37.608],
@@ -602,7 +611,9 @@ var config = {
             alignment: 'right',
             hidden: false,
             title: 'Dry Stress between 1980-2020',
-            description: 'The historical data shows that the average summer Dry Stress in the NBNM region has been increasing over the period from 1980 to 2020. We will analyze the data to understand the impact of Dry Stress on vegetation cover in this region.',
+            description: `
+            As you can see from the map and the density histogram, the dry stress in the NBNM region has been decreasing over the period from 1980 to 2020. This trend match the temperature increase trend.
+            `,
             image: './images/dry_stress_diff_hist.png',
             location: {
                 center: [-109.973,37.608],
@@ -638,8 +649,9 @@ var config = {
             id: 'insights-corelation-temperature',
             alignment: 'right',
             hidden: false,
-            title: 'Corelation between Temperature and Vegetation',
-            description: 'The historical data shows that there is a strong correlation between climate and vegetation cover in the NBNM region. We will analyze the data to identify the relationship between temperature, precipitation, VWC, and Dry Stress on vegetation cover in this region.',
+            title: 'Correlation between Temperature and Vegetation',
+            description: `
+            From the correlation matrix, we can see that there is a strong positive correlation between temperature and vegetation cover in the NBNM region. Especially, the temperature(Orange Color) has a strong positive correlation with the Bare Percentage(Brown Color) and Herb Coverage.`,
             image: './images/vegetation_temperature_corr.png',
             location: {
                 center: [-109.973,37.608],
@@ -675,8 +687,10 @@ var config = {
             id: 'insights-corelation-ppt',
             alignment: 'right',
             hidden: false,
-            title: 'Corelation between Percipitation and Vegetation',
-            description: 'The historical data shows that there is a strong correlation between climate and vegetation cover in the NBNM region. We will analyze the data to identify the relationship between temperature, precipitation, VWC, and Dry Stress on vegetation cover in this region.',
+            title: 'Correlation between Precipitation and Vegetation',
+            description: `
+            Similarly, the precipitation(Blue Color) has a strong positive correlation with the Herb Percentage(Green Color)in the NBNM region.
+            `,
             image: './images/vegetation_precipitation_corr.png',
             location: {
                 center: [-109.973,37.608],
@@ -709,49 +723,14 @@ var config = {
             ]
         },
         {
-            id: 'insights-corelation-soil',
-            alignment: 'right',
-            hidden: false,
-            title: 'Corelation between Soil and Vegetation',
-            description: 'The historical data shows that there is a strong correlation between climate and vegetation cover in the NBNM region. We will analyze the data to identify the relationship between temperature, precipitation, VWC, and Dry Stress on vegetation cover in this region.',
-            image: './images/vegetation_vwc_corr.png',
-            location: {
-                center: [-109.973,37.608],
-                zoom: 12,
-                pitch: 60,
-                bearing: 0,
-            },
-            mapAnimation: 'flyTo',
-            rotateAnimation: true,
-            callback: '',
-            onChapterEnter: [
-                {
-                    layer: 'dry_stress',
-                    opacity: 1,
-                },
-                {
-                    layer: 'vegetation-herb',
-                    opacity: 1,
-                }
-            ],
-            onChapterExit: [
-                {
-                    layer: 'dry_stress',
-                    opacity: 0,
-                },
-                {
-                    layer: 'vegetation-herb',
-                    opacity: 0,
-                }
-            ]
-        },
-        {
             id: 'insights-corelation-vwc',
             alignment: 'right',
             hidden: false,
-            title: 'Corelation between Soil and Vegetation',
-            description: 'The historical data shows that there is a strong correlation between climate and vegetation cover in the NBNM region. We will analyze the data to identify the relationship between temperature, precipitation, VWC, and Dry Stress on vegetation cover in this region.',
-            image: './images/vegetation_soil_corr.png',
+            title: 'Correlation between Soil and Vegetation',
+            description: `
+            The Volumetric Water Content(Blue Color) has a strong positive correlation with the Litter Coverage(Yellow Color) in the NBNM region.
+            `,
+            image: './images/vegetation_vwc_corr.png',
             location: {
                 center: [-109.973,37.608],
                 zoom: 12,
@@ -786,8 +765,24 @@ var config = {
             id: 'final-chapter',
             alignment: 'center',
             hidden: false,
-            title: 'Conclusion',
-            description: 'Based on the analysis of historical data, we can see that there is a strong relationship between climate change and vegetation cover in the NBNM region. The data shows that as temperature and precipitation increase, vegetation cover also increases. This indicates that climate change has a significant impact on vegetation cover in this region. By analyzing the historical data and predicting future trends, we can better understand the impact of climate change on vegetation cover and take steps to mitigate its effects.',
+            title: 'Conclusion and Future Research',
+            description: `
+            Based on the analysis of historical data, we can see that there is a strong relationship between climate change and vegetation cover in the NBNM region.</br>
+
+            1. The temperature has been increasing over the period from 1980 to 2020, which has a strong positive correlation with the Bare Percentage and Herb Coverage.</br>
+
+            2. The precipitation has been increasing over the period from 1980 to 2020, which has a strong positive correlation with the Herb Percentage.</br>
+
+            3. The Volumetric Water Content has a strong positive correlation with the Litter Coverage.</br>
+
+            </br>
+
+            Possible Future Research:</br>
+            1. Fix the data quality issue which the vegetation cover should not be stable over the period from 1980 to 2020.</br>
+            2. Analyze the impact of climate change on vegetation cover in other regions.</br>
+            3. Explore the impact of other climate indicators on vegetation cover.</br>
+
+            `,
             location: {
                 center: [-110.0472, 37.60413],
                 zoom: 3,
