@@ -9,7 +9,7 @@ var config = {
     inset: false, // Add an inset map in the lower left corner
     theme: 'dark',
     use3dTerrain: true, //set true for enabling 3D maps.
-    auto: false,
+    auto: false, // Enable auto play
     title: 'The Story between Climate Change and Vegetation Cover in NBNM',
     subtitle: 'A specific research in summer indicators.',
     byline: 'For DSAN Returning Scholarship 2024 by ly**7',
